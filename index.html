@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="item1">
+            <img src="img/shirt-1.png" alt="">
+            <div class="title">Shirt</div>
+            <div>
+                <label>Size: </label>
+                <select>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <button onclick="addToCart(item1)">Add to Cart</button>
+        </div>
+        <div class="card" id="item2">
+            <img src="img/shirt-3.png" alt="">
+            <div class="title">Shirt-2</div>
+            <div>
+                <label>Quantity: </label>
+                <select>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <button onclick="addToCart(item2)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <div class="title">CART</div><hr>
+        <div id="title"></div>
+    </div>
+
+    
+    <script src="cart.js"></script>
+</body>
+</html>
